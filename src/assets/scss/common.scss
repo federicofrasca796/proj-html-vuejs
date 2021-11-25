@@ -1,5 +1,6 @@
 body{
     font-family: 'Montserrat', sans-serif;
+    color: $dark_grey;
 }
 
 ul{
@@ -14,17 +15,18 @@ a {
 h1,h2,h3,h4,h5,h6{
     font-family: 'Playfair Display', serif;
 }
-h1, p{
-    margin: 1rem 0;
+h1{
+    margin: 1.5rem 0;
+    font-size: 3rem;
 }
+
 p{
     font-size: .9rem;
-    line-height: 1.8rem;
 }
 .section_title{
     text-transform: uppercase;
     font-weight: 800;
-    font-size: .9rem;
+    font-size: .8rem;
 }
 
 

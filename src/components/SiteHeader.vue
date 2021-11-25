@@ -155,7 +155,7 @@
 
       <!-- JUMBO -->
       <section class="row-cols-3" id="jumbotron">
-        <div class="col">
+        <div class="col jumbo_cta">
           <div class="section_title">i'm wingman</div>
           <h1 class="text-capitalize">
             peace on earth a wonderful wish but no way
@@ -197,6 +197,10 @@ export default {
   //   height: 600px;
   background: $bg_light;
   background-image: url("../assets/img/background-pattern-wavify.png");
+  p {
+    line-height: 1.7rem;
+    color: $light_grey;
+  }
 }
 #navbar {
   height: 70px;
@@ -227,9 +231,15 @@ export default {
     margin-left: 0.1rem;
     vertical-align: middle;
   }
-  #jumbotron {
-    background-image: url("../assets/img/home-movation-shape-face.png");
-    background-image: url("../assets/img/home-movation-hero-image.png");
+}
+
+#jumbotron {
+  background-image: url("../assets/img/home-movation-hero-image.png"),
+    url("../assets/img/home-movation-shape-face.png");
+  background-repeat: no-repeat;
+  background-position-x: right;
+  .jumbo_cta {
+    padding: 5rem 0;
   }
 }
 </style>
