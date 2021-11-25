@@ -237,9 +237,10 @@ export default {
   background-image: url("../assets/img/home-movation-hero-image.png"),
     url("../assets/img/home-movation-shape-face.png");
   background-repeat: no-repeat;
-  background-position-x: right;
+  background-position: 80% bottom, 90% 125%;
+  background-size: 38%, 40%;
   .jumbo_cta {
-    padding: 5rem 0;
+    padding: 8rem 0;
   }
 }
 </style>
