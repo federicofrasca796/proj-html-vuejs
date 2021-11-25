@@ -2,17 +2,19 @@
   <div id="site_header">
     <div class="container">
       <!-- NAVBAR -->
-      <nav class="row" id="navbar">
+      <nav class="navbar" id="navbar">
         <!-- LOGO -->
-        <div class="col-4 logo">
-          <img src="../assets/img/dark-logo.png" alt="MaxCoach logo" />
-        </div>
+        <img
+          class="logo"
+          src="../assets/img/dark-logo.png"
+          alt="MaxCoach logo"
+        />
 
         <!-- DROPDOWN LINKS -->
-        <ul class="col-4">
+        <ul>
           <li class="dropdown show">
             <a
-              class="dropdown-toggle"
+              class="dropdown_toggle"
               href="#"
               role="button"
               id="dropdownMenuLink"
@@ -31,7 +33,7 @@
           </li>
           <li class="dropdown show">
             <a
-              class="dropdown-toggle"
+              class="dropdown_toggle"
               href="#"
               role="button"
               id="dropdownMenuLink"
@@ -50,7 +52,7 @@
           </li>
           <li class="dropdown show">
             <a
-              class="dropdown-toggle"
+              class="dropdown_toggle"
               href="#"
               role="button"
               id="dropdownMenuLink"
@@ -69,7 +71,7 @@
           </li>
           <li class="dropdown show">
             <a
-              class="dropdown-toggle"
+              class="dropdown_toggle"
               href="#"
               role="button"
               id="dropdownMenuLink"
@@ -88,7 +90,7 @@
           </li>
           <li class="dropdown show">
             <a
-              class="dropdown-toggle"
+              class="dropdown_toggle"
               href="#"
               role="button"
               id="dropdownMenuLink"
@@ -107,7 +109,7 @@
           </li>
           <li class="dropdown show">
             <a
-              class="dropdown-toggle"
+              class="dropdown_toggle"
               href="#"
               role="button"
               id="dropdownMenuLink"
@@ -127,30 +129,28 @@
         </ul>
 
         <!-- SOCIALS  -->
-        <div class="col-4">
-          <ul class="socials">
-            <li>
-              <a href="#">
-                <i class="fab fa-twitter"></i>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i class="fab fa-facebook"></i>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i class="fab fa-instagram"></i>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i class="fab fa-linkedin"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
+        <ul class="socials">
+          <li>
+            <a href="#">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </li>
+        </ul>
       </nav>
     </div>
   </div>
@@ -172,4 +172,37 @@ export default {
 
 <style lang="scss">
 @import "../assets/scss/variables.scss";
+
+#site_header {
+  #navbar {
+    height: 70px;
+    ul {
+      margin: 0;
+    }
+    li {
+      display: inline-block;
+    }
+    .logo {
+      width: 120px;
+    }
+
+    .dropdown {
+      margin: 0 1rem;
+    }
+    .socials > li {
+      margin: 0 0.5rem;
+    }
+    .dropdown a {
+      color: $brand_purple;
+    }
+    .dropdown_toggle::after {
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      content: "\f107";
+      font-size: 0.5rem;
+      margin-left: 0.1rem;
+      vertical-align: middle;
+    }
+  }
+}
 </style>
