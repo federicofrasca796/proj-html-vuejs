@@ -152,6 +152,26 @@
           </li>
         </ul>
       </nav>
+
+      <!-- JUMBO -->
+      <section class="row-cols-3" id="jumbotron">
+        <div class="col">
+          <div class="section_title">i'm wingman</div>
+          <h1 class="text-capitalize">
+            peace on earth a wonderful wish but no way
+          </h1>
+          <p>
+            Success isn't overnight. It's when everyday you get a little better
+            than the day before. It all adds up.
+          </p>
+          <a href="#" class="btn btn_primary text-capitalize"
+            >get started for free <span class="img fs-6 ms-2">&#8594;</span>
+          </a>
+        </div>
+        <!-- <div class="col">
+              <img src="" alt="">
+          </div> -->
+      </section>
     </div>
   </div>
 </template>
@@ -174,35 +194,42 @@ export default {
 @import "../assets/scss/variables.scss";
 
 #site_header {
-  #navbar {
-    height: 70px;
-    ul {
-      margin: 0;
-    }
-    li {
-      display: inline-block;
-    }
-    .logo {
-      width: 120px;
-    }
+  //   height: 600px;
+  background: $bg_light;
+  background-image: url("../assets/img/background-pattern-wavify.png");
+}
+#navbar {
+  height: 70px;
+  ul {
+    margin: 0;
+  }
+  li {
+    display: inline-block;
+  }
+  .logo {
+    width: 120px;
+  }
 
-    .dropdown {
-      margin: 0 1rem;
-    }
-    .socials > li {
-      margin: 0 0.5rem;
-    }
-    .dropdown a {
-      color: $brand_purple;
-    }
-    .dropdown_toggle::after {
-      font-family: "Font Awesome 5 Free";
-      font-weight: 900;
-      content: "\f107";
-      font-size: 0.5rem;
-      margin-left: 0.1rem;
-      vertical-align: middle;
-    }
+  .dropdown {
+    margin: 0 1rem;
+  }
+  .socials > li {
+    margin: 0 0.8rem;
+  }
+  .dropdown a {
+    color: $brand_purple;
+  }
+  .dropdown_toggle::after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f107";
+    font-size: 0.6rem;
+    margin-left: 0.1rem;
+    vertical-align: middle;
+  }
+  #jumbotron {
+    background-image: url("../assets/img/home-movation-shape-face.png");
+    background-image: url("../assets/img/home-movation-hero-image.png");
   }
 }
 </style>
