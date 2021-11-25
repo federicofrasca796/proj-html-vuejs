@@ -7,7 +7,6 @@
 </template>
 
 <script>
-// import HelloWorld from './components/HelloWorld.vue'
 import SiteHeader from "./components/SiteHeader.vue";
 import SiteMain from "./components/SiteMain.vue";
 import SiteFooter from "./components/SiteFooter.vue";
@@ -23,4 +22,6 @@ export default {
 </script>
 
 <style lang="scss">
+@import "./assets/scss/variables.scss";
+@import "./assets/scss/common.scss";
 </style>
