@@ -130,16 +130,24 @@
         <div class="col-4">
           <ul class="socials">
             <li>
-              <i class="fab fa-twitter"></i>
+              <a href="#">
+                <i class="fab fa-twitter"></i>
+              </a>
             </li>
             <li>
-              <i class="fas fa-facebook"></i>
+              <a href="#">
+                <i class="fab fa-facebook"></i>
+              </a>
             </li>
             <li>
-              <i class="fas fa-instagram"></i>
+              <a href="#">
+                <i class="fab fa-instagram"></i>
+              </a>
             </li>
             <li>
-              <i class="fas fa-linkedin-in"></i>
+              <a href="#">
+                <i class="fab fa-linkedin"></i>
+              </a>
             </li>
           </ul>
         </div>
