@@ -24,6 +24,17 @@
 
     <!-- SECTION 2 "About Me" -->
     <sectionAboutMe />
+
+    <!-- SECTION 3 "Online Courses" -->
+    <div class="container">
+      <div class="row-cols-3">
+        <div class="card">
+          <img class="card-img-top" src="" />
+          <div class="card-title"></div>
+          <div class="card-text"></div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -37,7 +48,17 @@ export default {
   props: {},
 
   data() {
-    return {};
+    return {
+      onlineCourses: [
+        {
+          thumb: "../img/motivation-course-01-480x298.jpg",
+          price: [30, 0],
+          title: "How to be Successful: Create A Growth Mindset For Success",
+          lessons: 3,
+          students: 50,
+        },
+      ],
+    };
   },
 
   methods: {},
