@@ -11,146 +11,10 @@
         />
 
         <!-- DROPDOWN LINKS -->
-        <ul>
-          <li class="dropdown show">
-            <a
-              class="dropdown_toggle"
-              href="#"
-              role="button"
-              id="dropdownMenuLink"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              Home
-            </a>
-            <!-- Dropdown menu (NOT WORKING. MUST IMPORT BOOTSTRAP JS) -->
-            <!-- <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div> -->
-          </li>
-          <li class="dropdown show">
-            <a
-              class="dropdown_toggle"
-              href="#"
-              role="button"
-              id="dropdownMenuLink"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              Pages
-            </a>
-            <!-- Dropdown menu (NOT WORKING. MUST IMPORT BOOTSTRAP JS) -->
-            <!-- <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div> -->
-          </li>
-          <li class="dropdown show">
-            <a
-              class="dropdown_toggle"
-              href="#"
-              role="button"
-              id="dropdownMenuLink"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              Courses
-            </a>
-            <!-- Dropdown menu (NOT WORKING. MUST IMPORT BOOTSTRAP JS) -->
-            <!-- <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div> -->
-          </li>
-          <li class="dropdown show">
-            <a
-              class="dropdown_toggle"
-              href="#"
-              role="button"
-              id="dropdownMenuLink"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              Features
-            </a>
-            <!-- Dropdown menu (NOT WORKING. MUST IMPORT BOOTSTRAP JS) -->
-            <!-- <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div> -->
-          </li>
-          <li class="dropdown show">
-            <a
-              class="dropdown_toggle"
-              href="#"
-              role="button"
-              id="dropdownMenuLink"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              Blog
-            </a>
-            <!-- Dropdown menu (NOT WORKING. MUST IMPORT BOOTSTRAP JS) -->
-            <!-- <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div> -->
-          </li>
-          <li class="dropdown show">
-            <a
-              class="dropdown_toggle"
-              href="#"
-              role="button"
-              id="dropdownMenuLink"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              Shop
-            </a>
-            <!-- Dropdown menu (NOT WORKING. MUST IMPORT BOOTSTRAP JS) -->
-            <!-- <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div> -->
-          </li>
-        </ul>
+        <dropdown-links :navlinkArr="navLinks" />
 
         <!-- SOCIALS  -->
-        <ul class="socials">
-          <li>
-            <a href="#">
-              <i class="fab fa-twitter"></i>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <i class="fab fa-facebook-f"></i>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <i class="fab fa-instagram"></i>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <i class="fab fa-linkedin"></i>
-            </a>
-          </li>
-        </ul>
+        <social-icons :socialEl="socialIcons" />
       </nav>
 
       <!-- JUMBO -->
@@ -174,11 +38,68 @@
 </template>
 
 <script>
+import dropdownLinks from "./site-header-components/dropdownLinks.vue";
+import socialIcons from "./site-header-components/IconSocial.vue";
+
 export default {
+  components: { dropdownLinks, socialIcons },
   props: {},
 
   data() {
-    return {};
+    return {
+      navLinks: [
+        {
+          name: "Home",
+          popupActive: false,
+        },
+        {
+          name: "Pages",
+          popupActive: false,
+        },
+        {
+          name: "Courses",
+          popupActive: false,
+        },
+        {
+          name: "Features",
+          popupActive: false,
+        },
+        {
+          name: "Blog",
+          popupActive: false,
+        },
+        {
+          name: "Shop",
+          popupActive: false,
+        },
+      ],
+      socialIcons: [
+        {
+          name: "Twitter",
+          prefix: "fab",
+          icon_name: "fa-twitter",
+          link: "https://twitter.com/vuejs",
+        },
+        {
+          name: "Facebook",
+          prefix: "fab",
+          icon_name: "fa-facebook-f",
+          link: "https://www.facebook.com/groups/263127194965412",
+        },
+        {
+          name: "Instagram",
+          prefix: "fab",
+          icon_name: "fa-instagram",
+          link: "https://www.instagram.com/explore/tags/vuejs/",
+        },
+        {
+          name: "Linkedin",
+          prefix: "fab",
+          icon_name: "fa-linkedin",
+          link: "https://www.linkedin.com/groups/8384105/",
+        },
+      ],
+    };
   },
 
   methods: {},
