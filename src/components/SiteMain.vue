@@ -31,11 +31,37 @@
         <div class="section_title">begin your journey at MaxCoach</div>
         <h2>Latest <span class="primary_color">Online Courses</span></h2>
       </div>
-      <div class="row-cols-3 gy-5">
-        <div class="card">
-          <img class="card-img-top" src="" />
-          <div class="card-title"></div>
-          <div class="card-text"></div>
+      <div class="row">
+        <div class="col-4" v-for="course in onlineCourses" :key="course.id">
+          <div class="card">
+            <img
+              class="card-img-top"
+              :src="require('../assets/img/' + course.thumb + '.jpg')"
+              :alt="course.alt"
+            />
+            <div class="card-title">
+              <div class="price">
+                {{ course.price[0]
+                }}<span
+                  >.{{
+                    course.price[1] === 0
+                      ? course.price[1] + "0"
+                      : course.price[1]
+                  }}</span
+                >
+              </div>
+              {{ course.title }}
+            </div>
+            <div class="card-text">
+              <span>
+                <i class="far fa-file-alt"></i> {{ course.lessons }} Lessons
+              </span>
+              <span
+                ><i class="far fa-user"></i>
+                {{ course.students }} Students</span
+              >
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -55,42 +81,48 @@ export default {
     return {
       onlineCourses: [
         {
-          thumb: "../img/motivation-course-06-480x298.jpg",
+          thumb: "motivation-course-06-480x298",
+          alt: "Max reading and laughing at a phone screen",
           price: [30, 0],
           title: "How to be Successful: Create A Growth Mindset For Success",
           lessons: 3,
           students: 50,
         },
         {
-          thumb: "../img/motivation-course-05-480x298.jpg",
+          thumb: "motivation-course-05-480x298",
+          alt: "Max sitting in a sofa having a toast",
           price: [30, 0],
           title: "How to Build Confidence in Your Abilities",
           lessons: 1,
           students: 50,
         },
         {
-          thumb: "../img/motivation-course-04-480x298.jpg",
+          thumb: "motivation-course-04-480x298",
+          alt: "Max sitting in a sofa writing with a laptop",
           price: [20, 0],
           title: "Productivity Machine - Focus in a Distracted World",
           lessons: 5,
           students: 50,
         },
         {
-          thumb: "../img/motivation-course-03-480x298.jpg",
+          thumb: "motivation-course-03-480x298",
+          alt: "Max and another guy discussing and looking at a laptop",
           price: [20, 0],
           title: "Effective Time Management Mastery - Complete Guide",
           lessons: 18,
           students: 50,
         },
         {
-          thumb: "../img/motivation-course-02-480x298.jpg",
+          thumb: "motivation-course-02-480x298",
+          alt: "Guy giving a public speach in front of a little crowd",
           price: [25, 99],
           title: "Body Language Secrets for Entrepreneurs",
           lessons: 18,
           students: 50,
         },
         {
-          thumb: "../img/motivation-course-01-480x298.jpg",
+          thumb: "motivation-course-01-480x298",
+          alt: "Max and another guy with a blue suit laughing and pointing at a laptop",
           price: [19, 99],
           title: "Management Skills: The Science of Leadership",
           lessons: 17,
