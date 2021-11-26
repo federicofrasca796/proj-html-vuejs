@@ -57,6 +57,9 @@ export default {};
 
 .video {
   position: relative;
+  img {
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 25px 50px -12px;
+  }
   &::after {
     content: url("../../assets/img/icon-youtube-play.png");
     position: absolute;
