@@ -168,17 +168,12 @@
             >get started for free <span class="img fs-6 ms-2">&#8594;</span>
           </a>
         </div>
-        <!-- <div class="col">
-              <img src="" alt="">
-          </div> -->
       </section>
     </div>
   </div>
 </template>
 
 <script>
-// import "bootstrap/js/dist/dropdown";
-
 export default {
   props: {},
 
