@@ -55,9 +55,6 @@ export default {};
 <style lang="scss">
 @import "@/assets/scss/variables.scss";
 
-//=================
-//Section 2
-//=================
 .video {
   position: relative;
   &::after {
@@ -66,30 +63,6 @@ export default {};
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-  }
-}
-.quote {
-  font-family: "Playfair Display", serif;
-  margin-bottom: 2rem;
-  font-size: 1.5rem;
-  line-height: 2.7rem;
-}
-.quote_info {
-  margin-top: 5rem;
-  &::before {
-    content: url("../../assets/img/home-movation-shape-01.png");
-    display: block;
-  }
-  .quote_author {
-    font-size: 1.4rem;
-    font-weight: 500;
-    color: $dark_grey;
-    margin: 0.5rem 0;
-  }
-  .author_team {
-    font-size: 0.9rem;
-    text-transform: uppercase;
-    color: $light_grey;
   }
 }
 </style>
