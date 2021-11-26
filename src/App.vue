@@ -7,8 +7,6 @@
 </template>
 
 <script>
-import "@fontsource/montserrat";
-import "@fontsource/playfair-display";
 import SiteHeader from "./components/SiteHeader.vue";
 import SiteMain from "./components/SiteMain.vue";
 import SiteFooter from "./components/SiteFooter.vue";

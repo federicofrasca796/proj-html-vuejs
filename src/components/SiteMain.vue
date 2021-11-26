@@ -1,6 +1,7 @@
 <template>
   <div id="site_main">
-    <section class="results_overview container">
+    <!-- SECTION 1 "Accomplishments" -->
+    <section class="container">
       <div class="row">
         <div class="col-3 accomplishment">
           <div class="numbers">1.926</div>
@@ -15,7 +16,7 @@
           <div class="text-uppercase txt">enrolled learners</div>
         </div>
         <div class="col-3 accomplishment">
-          <div class="numbers">20</div>
+          <div class="numbers">200</div>
           <div class="text-uppercase txt">online instructors</div>
         </div>
       </div>
@@ -42,6 +43,8 @@ export default {
   section {
     padding: 5rem 0;
   }
+
+  // Section 1
   .accomplishment {
     position: relative;
   }
@@ -55,16 +58,20 @@ export default {
     position: absolute;
     top: 0;
     right: 0;
+    transform: rotate(180deg);
   }
   .numbers,
   .txt {
-    font-weight: 800;
     text-align: center;
   }
   .numbers {
+    font-weight: 700;
     font-size: 1.8rem;
     margin-bottom: 0.5rem;
     color: $brand_primary;
+  }
+  .txt {
+    color: $light_grey;
   }
 }
 </style>

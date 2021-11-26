@@ -1,10 +1,10 @@
-body{
-    font-family: 'Montserrat', sans-serif;
+html, body{
+    font-family: 'Outfit', sans-serif;
     color: $dark_grey;
 }
 
 ul{
-    font-weight: 600;
+    font-weight: 400;
     list-style: none;
 }
 a {
@@ -16,32 +16,54 @@ h1,h2,h3,h4,h5,h6{
     font-family: 'Playfair Display', serif;
 }
 h1{
-    margin: 1.5rem 0;
     font-size: 3rem;
+    margin: 1.5rem 0;
+}
+h2{
+    font-size: 2.3rem;
+    margin: 1.2rem 0;
 }
 
 p{
-    font-size: .9rem;
-}
-.section_title{
-    text-transform: uppercase;
-    font-weight: 800;
-    font-size: .8rem;
+    font-size: 1rem;
+    font-weight: 300;
+    color: #6b6c6c;
 }
 
+//========
+//TEXT FORMATTING ELEMENTS
+//========
+.section_title{
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: .9rem;
+    color: $light_grey;
+}
+
+.copybait{
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: $dark_grey;
+}
 
 //=======
 //UTILITIES
 //=======
-
+.primary_color{
+    color: $brand_primary;
+}
 a.btn{
-    line-height: .7rem;
-    font-size: .7rem;
-    font-weight: 800;
+    line-height: .8rem;
+    font-size: .8rem;
+    font-weight: 600;
     padding: 1rem 3rem;
     margin: 1rem 0;
 }
 .btn_primary{
     background-color: $brand_primary;
     color: #ffffff;
+    &:hover{
+        background-color: $brand_purple;
+        color: #ffffff;
+    }
 }
