@@ -45,29 +45,6 @@
         </div>
       </div>
     </div>
-    <div class="row books_clients">
-      <!-- <div class="col-2">
-        <img src="@/assets/img/client-logo-01-primary.png" alt="client logo" />
-      </div> -->
-      <div class="col-2 d-flex align-items-center justify-content-center">
-        <img src="@/assets/img/client-logo-05-primary.png" alt="client logo" />
-      </div>
-      <div class="col-2 d-flex align-items-center justify-content-center">
-        <img src="@/assets/img/client-logo-06-primary.png" alt="client logo" />
-      </div>
-      <div class="col-2 d-flex align-items-center justify-content-center">
-        <img src="@/assets/img/client-logo-07-primary.png" alt="client logo" />
-      </div>
-      <div class="col-2 d-flex align-items-center justify-content-center">
-        <img src="@/assets/img/client-logo-04-primary.png" alt="client logo" />
-      </div>
-      <div class="col-2 d-flex align-items-center justify-content-center">
-        <img src="@/assets/img/client-logo-03-primary.png" alt="client logo" />
-      </div>
-      <div class="col-2 d-flex align-items-center justify-content-center">
-        <img src="@/assets/img/client-logo-02-primary.png" alt="client logo" />
-      </div>
-    </div>
   </section>
 </template>
 
@@ -75,6 +52,7 @@
 export default {
   props: {
     booksArr: Array,
+    clients: Array,
   },
 };
 </script>
@@ -82,9 +60,5 @@ export default {
 <style lang="scss">
 .check_list {
   margin: 2rem 0;
-}
-.books_clients {
-  margin: 8rem 0;
-  filter: grayscale(0.7) opacity(0.35);
 }
 </style>

@@ -30,6 +30,9 @@
 
     <!-- SECTION 4 "Book Store" -->
     <sectionBooks :booksArr="books" />
+
+    <!-- SECTION 5 "Clients" -->
+    <sectionClients :clientsArr="clientsLogos" />
   </div>
 </template>
 
@@ -37,12 +40,14 @@
 import sectionAboutMe from "@/components/site-main-components/sectionAboutMe.vue";
 import sectionCourses from "@/components/site-main-components/sectionCourses.vue";
 import sectionBooks from "@/components/site-main-components/sectionBooks.vue";
+import sectionClients from "@/components/site-main-components/sectionClients.vue";
 
 export default {
   components: {
     sectionAboutMe,
     sectionCourses,
     sectionBooks,
+    sectionClients,
   },
   props: {},
 
@@ -109,6 +114,15 @@ export default {
           title: "Real man 4.0 by Maxcoach",
           price: [39, 0],
         },
+      ],
+      clientsLogos: [
+        "client-logo-05-primary.png",
+        "client-logo-06-primary.png",
+        "client-logo-07-primary.png",
+        "client-logo-04-primary.png",
+        "client-logo-03-primary.png",
+        "client-logo-02-primary.png",
+        // "client-logo-01-primary.png",
       ],
     };
   },
