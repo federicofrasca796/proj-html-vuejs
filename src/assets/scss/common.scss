@@ -12,7 +12,7 @@ a {
     text-decoration: none;
 }
 
-h1,h2,h3,h4,h5,h6{
+h1,h2{
     font-family: 'Playfair Display', serif;
 }
 h1{
@@ -23,7 +23,12 @@ h2{
     font-size: 2.3rem;
     margin: 1.2rem 0;
 }
-
+h3{
+    color: $brand_purple;
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
 p{
     font-size: 1rem;
     font-weight: 300;
@@ -71,6 +76,7 @@ p{
     color: $light_grey;
   }
 }
+
 //=======
 //UTILITIES
 //=======
@@ -78,8 +84,8 @@ p{
     color: $brand_primary;
 }
 a.btn{
-    line-height: .8rem;
-    font-size: .8rem;
+    line-height: .9rem;
+    font-size: .9rem;
     font-weight: 600;
     padding: 1rem 3rem;
     margin: 1rem 0;
@@ -90,5 +96,35 @@ a.btn{
     &:hover{
         background-color: $brand_purple;
         color: #ffffff;
+    }
+}
+
+.card{
+    border: none;
+    .price {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+        span {
+        font-size: 1.2rem;
+        }
+    }
+    h3{
+        margin-bottom: 0;
+    }
+    .card-title, .card-text {
+      margin: 1rem 2.5rem;
+    }
+    .card-text{
+        color: $light_grey;
+        margin-bottom: 2rem;
+        i {
+            font-size: .9rem;
+            margin-right: .4rem;
+        }
+        .lessons,.students{
+            margin-right: 1.5rem;
+
+        }
     }
 }

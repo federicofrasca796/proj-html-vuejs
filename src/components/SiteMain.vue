@@ -27,11 +27,14 @@
 
     <!-- SECTION 3 "Online Courses" -->
     <section class="container">
+      <!-- Section title -->
       <div class="text-center">
         <div class="section_title">begin your journey at MaxCoach</div>
         <h2>Latest <span class="primary_color">Online Courses</span></h2>
       </div>
-      <div class="row">
+
+      <!-- Courses cards -->
+      <div class="row g-5">
         <div class="col-4" v-for="course in onlineCourses" :key="course.id">
           <div class="card">
             <img
@@ -40,8 +43,9 @@
               :alt="course.alt"
             />
             <div class="card-title">
-              <div class="price">
-                {{ course.price[0]
+              <!-- Course price -->
+              <div class="price primary_color">
+                ${{ course.price[0]
                 }}<span
                   >.{{
                     course.price[1] === 0
@@ -50,20 +54,29 @@
                   }}</span
                 >
               </div>
-              {{ course.title }}
+
+              <!-- Course title  -->
+              <h3>{{ course.title }}</h3>
             </div>
+
+            <!-- Card info -->
             <div class="card-text">
-              <span>
+              <span class="lessons">
                 <i class="far fa-file-alt"></i> {{ course.lessons }} Lessons
               </span>
-              <span
-                ><i class="far fa-user"></i>
-                {{ course.students }} Students</span
-              >
+              <span class="students">
+                <i class="far fa-user"></i>
+                {{ course.students }} Students
+              </span>
             </div>
           </div>
         </div>
       </div>
+
+      <!-- CTA -->
+      <a href="" class="btn btn_primary text-center"
+        >View all courses <span class="img fs-6 ms-2">&#8594;</span></a
+      >
     </section>
   </div>
 </template>
