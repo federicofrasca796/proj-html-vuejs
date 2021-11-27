@@ -26,59 +26,7 @@
     <sectionAboutMe />
 
     <!-- SECTION 3 "Online Courses" -->
-    <section class="container">
-      <!-- Section title -->
-      <div class="text-center">
-        <div class="section_title">begin your journey at MaxCoach</div>
-        <h2>Latest <span class="primary_color">Online Courses</span></h2>
-      </div>
-
-      <!-- Courses cards -->
-      <div class="row g-5">
-        <div class="col-4" v-for="course in onlineCourses" :key="course.id">
-          <div class="card">
-            <img
-              class="card-img-top"
-              :src="require('../assets/img/' + course.thumb + '.jpg')"
-              :alt="course.alt"
-            />
-            <div class="card-title">
-              <!-- Course price -->
-              <div class="price primary_color">
-                ${{ course.price[0]
-                }}<span
-                  >.{{
-                    course.price[1] === 0
-                      ? course.price[1] + "0"
-                      : course.price[1]
-                  }}</span
-                >
-              </div>
-
-              <!-- Course title  -->
-              <h3>{{ course.title }}</h3>
-            </div>
-
-            <!-- Card info -->
-            <div class="card-text">
-              <span class="lessons">
-                <i class="far fa-file-alt"></i> {{ course.lessons }} Lessons
-              </span>
-              <span class="students">
-                <i class="far fa-user"></i>
-                {{ course.students }} Students
-              </span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- CTA -->
-      <a href="" class="btn btn_primary text-center"
-        >View all courses <span class="img fs-6 ms-2">&#8594;</span></a
-      >
-    </section>
-
+    <sectionCourses :coursesArr="onlineCourses" />
     <!-- SECTION 4 "Book Store" -->
     <section class="container">
       <div class="row">
@@ -97,7 +45,7 @@
           <a href="" class="btn btn_primary text-capitalize">Get free ebook</a>
         </div>
 
-        <div class="col-6 ms-auto">
+        <div class="col-8 ms-auto">
           <div class="row">
             <div class="col-6" v-for="book in books" :key="book.id">
               <div class="card">
@@ -134,10 +82,12 @@
 
 <script>
 import sectionAboutMe from "@/components/site-main-components/sectionAboutMe.vue";
+import sectionCourses from "@/components/site-main-components/sectionCourses.vue";
 
 export default {
   components: {
     sectionAboutMe,
+    sectionCourses,
   },
   props: {},
 
@@ -145,7 +95,7 @@ export default {
     return {
       onlineCourses: [
         {
-          thumb: "motivation-course-06-480x298",
+          thumb: "motivation-course-06-480x298.jpg",
           alt: "Max reading and laughing at a phone screen",
           price: [30, 0],
           title: "How to be Successful: Create A Growth Mindset For Success",
@@ -153,7 +103,7 @@ export default {
           students: 50,
         },
         {
-          thumb: "motivation-course-05-480x298",
+          thumb: "motivation-course-05-480x298.jpg",
           alt: "Max sitting in a sofa having a toast",
           price: [30, 0],
           title: "How to Build Confidence in Your Abilities",
@@ -161,7 +111,7 @@ export default {
           students: 50,
         },
         {
-          thumb: "motivation-course-04-480x298",
+          thumb: "motivation-course-04-480x298.jpg",
           alt: "Max sitting in a sofa writing with a laptop",
           price: [20, 0],
           title: "Productivity Machine - Focus in a Distracted World",
@@ -169,7 +119,7 @@ export default {
           students: 50,
         },
         {
-          thumb: "motivation-course-03-480x298",
+          thumb: "motivation-course-03-480x298.jpg",
           alt: "Max and another guy discussing and looking at a laptop",
           price: [20, 0],
           title: "Effective Time Management Mastery - Complete Guide",
@@ -177,7 +127,7 @@ export default {
           students: 50,
         },
         {
-          thumb: "motivation-course-02-480x298",
+          thumb: "motivation-course-02-480x298.jpg",
           alt: "Guy giving a public speach in front of a little crowd",
           price: [25, 99],
           title: "Body Language Secrets for Entrepreneurs",
@@ -185,7 +135,7 @@ export default {
           students: 50,
         },
         {
-          thumb: "motivation-course-01-480x298",
+          thumb: "motivation-course-01-480x298.jpg",
           alt: "Max and another guy with a blue suit laughing and pointing at a laptop",
           price: [19, 99],
           title: "Management Skills: The Science of Leadership",
