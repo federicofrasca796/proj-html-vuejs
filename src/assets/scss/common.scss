@@ -129,3 +129,20 @@ a.btn{
         }
     }
 }
+
+.check_list{
+    padding-left:1rem;
+    li{
+        margin-bottom: .8rem;
+        &::marker{
+            font-family: "Font Awesome 5 Free"; 
+            font-weight: 900;
+            content: "\f00c";
+            color: $brand_primary;
+        }
+        span{
+            color: $light_grey;
+            padding-left: 1rem;
+        }
+    }
+}
