@@ -1,5 +1,5 @@
 <template>
-  <section class="container">
+  <section class="container" id="online_courses">
     <!-- Section title -->
     <div class="text-center">
       <h4 class="section_title">begin your journey at MaxCoach</h4>
@@ -65,33 +65,34 @@ export default {
 <style lang="scss">
 @import "@/assets/scss/variables.scss";
 
-.card {
-  border: none;
-  .price {
-    font-size: 1.6rem;
-    font-weight: 600;
-    margin: 0.5rem 0;
-    span {
-      font-size: 1.2rem;
+#online_courses {
+  .card {
+    .price {
+      font-size: 1.6rem;
+      font-weight: 600;
+      margin: 0.5rem 0;
+      span {
+        font-size: 1.2rem;
+      }
     }
-  }
-  h3 {
-    margin-bottom: 0.5rem;
-  }
-  .card-title,
-  .card-text {
-    margin: 1rem 2.5rem;
-  }
-  .card-text {
-    color: $light_grey;
-    margin-bottom: 2rem;
-    i {
-      font-size: 0.9rem;
-      margin-right: 0.4rem;
+    h3 {
+      margin-bottom: 0.5rem;
     }
-    .lessons,
-    .students {
-      margin-right: 1.5rem;
+    .card-title,
+    .card-text {
+      margin: 1rem 2.5rem;
+    }
+    .card-text {
+      color: $light_grey;
+      margin-bottom: 2rem;
+      i {
+        font-size: 0.9rem;
+        margin-right: 0.4rem;
+      }
+      .lessons,
+      .students {
+        margin-right: 1.5rem;
+      }
     }
   }
 }

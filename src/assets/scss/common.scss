@@ -106,7 +106,15 @@ a.btn{
     }
 }
 
-
+.card {
+  border: none;
+    h3 {
+        margin-bottom: 0.5rem;
+    }
+    .card-text {
+        color: $light_grey;        
+    }
+}
 
 .check_list{
     padding-left:1rem;
