@@ -47,11 +47,24 @@
       </div>
 
       <div class="row">
-        <div class="col-3">
+        <div class="col-3" v-for="article in articles" :key="article.key">
           <div class="card">
-            <img src="" alt="" class="card-img-top" />
-            <div class="card-title"></div>
-            <div class="card-text"></div>
+            <img
+              :src="require(`@/assets/img/${article.thumb}`)"
+              alt="article thumbnail"
+              class="card-img-top"
+            />
+            <div class="card-title">
+              <div class="publish_date">
+                <i class="far fa-calendar"></i>
+                {{ article.publish_date }}
+              </div>
+
+              <h3>{{ article.title }}</h3>
+            </div>
+            <div class="card-text">
+              {{ article.text }}
+            </div>
           </div>
         </div>
       </div>
@@ -189,6 +202,32 @@ export default {
             avatar: "testimonial-avata-03.jpg",
             job: "Multimedia Admin",
           },
+        },
+      ],
+      articles: [
+        {
+          thumb: "motivation-blog-04-480x325.jpg",
+          title: "How to Stay True to Your Personal Brand",
+          publish_date: "May 13, 2020",
+          text: "When it comes to your business or career, you want ...",
+        },
+        {
+          thumb: "motivation-blog-03-480x325.jpg",
+          title: "5 Vital Lessons in 5 Years of Freelancing",
+          publish_date: "May 13, 2020",
+          text: "Being self-employed and working from home, it's easy to get ...",
+        },
+        {
+          thumb: "motivation-blog-02-480x325.jpg",
+          title: "11 Super Useful Tips for Small-Business Owners",
+          publish_date: "May 13, 2020",
+          text: "Being a small-business owner poses a ton of challenges. We ...",
+        },
+        {
+          thumb: "motivation-blog-01-480x325.jpg",
+          title: "How to Give Yourself Grace to Start Again",
+          publish_date: "May 13, 2020",
+          text: "Forgive yourself for bad habits you may have started or ...",
         },
       ],
     };
