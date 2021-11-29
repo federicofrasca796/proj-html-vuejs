@@ -1,5 +1,5 @@
 <template>
-  <div id="site_main">
+  <main id="site_main">
     <!-- SECTION 1 "Accomplishments" -->
     <section class="container">
       <div class="row">
@@ -35,51 +35,10 @@
     <sectionClients :clientsArr="clientsLogos" />
 
     <!-- SECTION 6 "Real Stories" -->
-    <section class="container-fluid bg_waves position-relative">
-      <div class="row">
-        <!-- Stories column -->
-        <div class="col-6 text-center">
-          <h4 class="section_title primary_color">Real Stories</h4>
+    <sectionStories :storiesArr="realStories" />
 
-          <div v-for="story in realStories" :key="story.id">
-            <div class="real_story" v-if="story.showActive === true">
-              <p class="story_quote">{{ story.review_text }}</p>
-              <img
-                class="story_avatar rounded-circle"
-                :src="require(`@/assets/img/${story.author.avatar}`)"
-                alt="testimonial avatar"
-              />
-              <div class="story_author">{{ story.author.name }}</div>
-              <div class="story_job">/{{ story.author.job }}</div>
-            </div>
-          </div>
-
-          <div class="carousel_scroll">
-            <img
-              src="@/assets/img/image.png"
-              alt="arrow up"
-              class="d-inline-block"
-            />
-            <div class="carousel_counter">1/4</div>
-            <img
-              src="@/assets/img/image (1).png"
-              alt="arrow up"
-              class="d-inline-block"
-            />
-          </div>
-        </div>
-        <!-- MaxCoach img column  -->
-        <div class="col-6 px-0">
-          <img
-            class="img-fluid"
-            src="@/assets/img/home-movation-testimonial-image.jpg"
-            alt="max coach looking outside the window while talking at the phone"
-            width="100%"
-          />
-        </div>
-      </div>
-    </section>
-  </div>
+    <!-- SECTION 7 "Blog Articles" -->
+  </main>
 </template>
 
 <script>
@@ -87,6 +46,7 @@ import sectionAboutMe from "@/components/site-main-components/sectionAboutMe.vue
 import sectionCourses from "@/components/site-main-components/sectionCourses.vue";
 import sectionBooks from "@/components/site-main-components/sectionBooks.vue";
 import sectionClients from "@/components/site-main-components/sectionClients.vue";
+import sectionStories from "@/components/site-main-components/sectionStories.vue";
 
 export default {
   components: {
@@ -94,6 +54,7 @@ export default {
     sectionCourses,
     sectionBooks,
     sectionClients,
+    sectionStories,
   },
   props: {},
 
