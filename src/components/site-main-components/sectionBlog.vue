@@ -48,4 +48,18 @@ export default {
 </script>
 
 <style lang="scss">
+@import "@/assets/scss/variables.scss";
+
+#blog_articles {
+  .publish_date {
+    margin-top: 2rem;
+    color: $light_grey;
+    i {
+      margin-right: 0.5rem;
+    }
+  }
+  .card-title > h3 {
+    color: $darkest_grey;
+  }
+}
 </style>
