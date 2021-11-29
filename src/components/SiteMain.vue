@@ -2,6 +2,7 @@
   <main id="site_main">
     <!-- SECTION 1 "Accomplishments" -->
     <sectionAccomplish />
+
     <!-- SECTION 2 "About Me" -->
     <sectionAboutMe />
 
