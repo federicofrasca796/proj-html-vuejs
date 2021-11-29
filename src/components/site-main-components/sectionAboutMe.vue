@@ -1,5 +1,5 @@
 <template>
-  <section class="container">
+  <section class="container" id="about_me">
     <h4 class="section_title primary_color">about me</h4>
     <div class="row justify-content-between">
       <div class="col-4">

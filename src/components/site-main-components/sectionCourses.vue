@@ -48,9 +48,11 @@
     </div>
 
     <!-- CTA -->
-    <a href="" class="btn btn_primary text-center"
-      >View all courses <span class="img fs-6 ms-2">&#8594;</span></a
-    >
+    <div class="text-center">
+      <a href="" class="btn btn_primary text-center"
+        >View all courses <span class="img fs-6 ms-2">&#8594;</span></a
+      >
+    </div>
   </section>
 </template>
 

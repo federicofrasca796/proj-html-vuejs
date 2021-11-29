@@ -1,5 +1,5 @@
 <template>
-  <section class="container">
+  <section class="container" id="clients">
     <div class="row books_clients">
       <div
         class="col-2 d-flex align-items-center justify-content-center"

@@ -1,5 +1,5 @@
 <template>
-  <section class="container">
+  <section class="container" id="book_store">
     <div class="row">
       <!-- CTA column -->
       <div class="col-3">
