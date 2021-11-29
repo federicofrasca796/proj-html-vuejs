@@ -38,6 +38,24 @@
     <sectionStories :storiesArr="realStories" />
 
     <!-- SECTION 7 "Blog Articles" -->
+    <section class="container">
+      <div class="row">
+        <h4 class="section_title">Blog Updated</h4>
+        <h2>
+          Interesting <span class="primary_color">articles updated</span> daily
+        </h2>
+      </div>
+
+      <div class="row">
+        <div class="col-3">
+          <div class="card">
+            <img src="" alt="" class="card-img-top" />
+            <div class="card-title"></div>
+            <div class="card-text"></div>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 </template>
 
