@@ -1,6 +1,6 @@
 <template>
   <section class="container">
-    <div class="section_title primary_color">about me</div>
+    <h4 class="section_title primary_color">about me</h4>
     <div class="row justify-content-between">
       <div class="col-4">
         <h2 class="text-capitalize">

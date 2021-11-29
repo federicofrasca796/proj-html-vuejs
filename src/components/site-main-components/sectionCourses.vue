@@ -2,7 +2,7 @@
   <section class="container">
     <!-- Section title -->
     <div class="text-center">
-      <div class="section_title">begin your journey at MaxCoach</div>
+      <h4 class="section_title">begin your journey at MaxCoach</h4>
       <h2>Latest <span class="primary_color">Online Courses</span></h2>
     </div>
 

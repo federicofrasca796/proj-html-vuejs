@@ -33,6 +33,34 @@
 
     <!-- SECTION 5 "Clients" -->
     <sectionClients :clientsArr="clientsLogos" />
+
+    <!-- SECTION 6 "Real Stories" -->
+    <section class="container-fluid">
+      <div class="row">
+        <div class="col-6 text-center">
+          <h4 class="section_title primary_color mb-5">Real Stories</h4>
+          <div v-for="story in realStories" :key="story.id">
+            <div class="real_story" v-if="story.showActive === true">
+              <div class="realstory_quote">{{ story.review_text }}</div>
+              <img
+                class="realstory_avatar"
+                :src="require(`@/assets/img/${story.author.avatar}`)"
+                alt="testimonial avatar"
+              />
+              <div class="story_author">{{ story.author.name }}</div>
+              <div class="story_job">/{{ story.author.job }}</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-6">
+          <img
+            src="../assets/img/home-movation-testimonial-image.jpg"
+            alt="max coach looking outside the window while talking at the phone"
+            width="100%"
+          />
+        </div>
+      </div>
+    </section>
   </div>
 </template>
 
@@ -126,15 +154,17 @@ export default {
       ],
       realStories: [
         {
+          showActive: true,
           review_text:
             "I am free to learn at my own pace, follow my own schedule and choose the subject I want to learn from the syllabus. Great study portal for people like me.",
-          review_author: {
+          author: {
             name: "Mina Hollace",
             avatar: "testimonial-avata-02.jpg",
             job: "Freelancer",
           },
         },
         {
+          showActive: false,
           review_text:
             "I need to get a certification for English proficiency and MaxCoach is my best choice. Their tutors are smart and professional when dealing with students.",
           review_author: {
@@ -144,6 +174,7 @@ export default {
           },
         },
         {
+          showActive: false,
           review_text:
             "I am happy with their arrangement of lessons and subjects. They reflect a scientific investigation into effective methods to adopt for learners.",
           review_author: {
@@ -153,6 +184,7 @@ export default {
           },
         },
         {
+          showActive: false,
           review_text:
             "I'm a very strict person so I require everything to be organized and neat. Then, I'll be able to make things right and shine. MaxCoach guys just got me.",
           review_author: {

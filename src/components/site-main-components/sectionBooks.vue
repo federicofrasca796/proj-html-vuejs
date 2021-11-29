@@ -3,7 +3,7 @@
     <div class="row">
       <!-- CTA column -->
       <div class="col-3">
-        <div class="section_title">Book Store Online</div>
+        <h4 class="section_title">Book Store Online</h4>
         <h2>Be Alpha With <span class="primary_color">Wingman's Book</span></h2>
         <ul class="check_list">
           <li><span>Help you understand yourself better</span></li>
