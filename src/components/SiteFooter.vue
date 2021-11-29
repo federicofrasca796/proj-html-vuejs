@@ -1,15 +1,41 @@
 <template>
-  <div id="site_footer">
+  <footer id="site_footer">
     <div class="container">
       <div class="row">
-        <div class="col-6"></div>
-        <div class="col-6 d-flex">
-          <div class="col-6"></div>
-          <div class="col-6"></div>
+        <!-- Address and socials -->
+        <div class="col-6">
+          <div class="address">
+            <h3 class="white-txt">Address</h3>
+            <div>382 NE 191st St # 87394 Miami, FL 33179-3899</div>
+            <div>+1 (305) 547-9909 (9am - 5pm EST, Monday - Friday)</div>
+            <a href="#">support@maxcoach.com</a>
+          </div>
+          <div class="socials">
+            <i class="fab fa-facebook-square"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-linkedin"></i>
+          </div>
+        </div>
+
+        <!-- Links  -->
+        <div class="col-6 d-flex" id="footer_links">
+          <div
+            class="col-6"
+            v-for="section in footer_sections"
+            :key="section.id"
+          >
+            <h3>{{ section.title }}</h3>
+            <ul>
+              <li v-for="link in section.links" :key="link.id">
+                <a :href="link.href">{{ link.link_name }}</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
-  </div>
+  </footer>
 </template>
 
 <script>
@@ -83,5 +109,17 @@ export default {
 #site_footer {
   background: $bg_dark;
   color: $lighter_grey;
+  padding: 3rem 0;
+  #footer_links {
+    .col-6:first-child {
+      ul {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      li {
+        width: 50%;
+      }
+    }
+  }
 }
 </style>
