@@ -29,12 +29,12 @@
       </ul>
     </nav>
 
-    <SiteHeader id="start" />
+    <SiteHeader id="site_header" />
     <SiteMain />
     <SiteFooter />
 
     <!-- Return top button  -->
-    <a href="#start" id="to_top">
+    <a href="#site_header" id="to_top">
       <i class="fas fa-arrow-up"></i>
     </a>
   </div>
