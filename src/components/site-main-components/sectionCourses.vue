@@ -29,7 +29,9 @@
             </div>
 
             <!-- Course title  -->
-            <h3>{{ course.title }}</h3>
+            <a href="">
+              <h3>{{ course.title }}</h3>
+            </a>
           </div>
 
           <!-- Card info -->
@@ -69,14 +71,11 @@ export default {
 
 #online_courses {
   .card {
-    .price {
-      font-size: 1.6rem;
-      font-weight: 600;
-      margin: 0.5rem 0;
-      span {
-        font-size: 1.2rem;
-      }
+    transition: box-shadow 0.5s ease-in-out;
+    &:hover {
+      box-shadow: 0 14px 59px rgb(0 0 0 / 12%);
     }
+
     h3 {
       margin-bottom: 0.5rem;
     }

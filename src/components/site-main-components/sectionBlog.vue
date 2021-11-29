@@ -9,7 +9,7 @@
     </div>
 
     <!-- Articles cards -->
-    <div class="row">
+    <div class="row gx-4">
       <div class="col-3" v-for="article in articlesArr" :key="article.key">
         <div class="card">
           <img
@@ -23,7 +23,9 @@
               {{ article.publish_date }}
             </div>
 
-            <h3>{{ article.title }}</h3>
+            <a href="">
+              <h3>{{ article.title }}</h3>
+            </a>
           </div>
           <div class="card-text">
             {{ article.text }}

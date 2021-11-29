@@ -25,4 +25,17 @@ export default {
 @import "./assets/scss/variables.scss";
 @import "~bootstrap/scss/bootstrap";
 @import "./assets/scss/common.scss";
+
+#online_courses,
+#book_store {
+  .card {
+    a {
+      color: $brand_purple;
+      transition: color 0.5s;
+      &:hover {
+        color: $brand_primary;
+      }
+    }
+  }
+}
 </style>
