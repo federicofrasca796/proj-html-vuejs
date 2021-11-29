@@ -110,7 +110,6 @@ export default {
 @import "../assets/scss/variables.scss";
 
 #site_header {
-  //   height: 600px;
   background: $bg_light;
   background-image: url("../assets/img/background-pattern-wavify.png");
   p {

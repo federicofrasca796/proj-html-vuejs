@@ -84,6 +84,12 @@ p{
 .primary_color{
     color: $brand_primary;
 }
+
+.bg_waves{
+    background: $bg_light;
+  background-image: url("./assets/img/background-pattern-wavify.png");
+}
+
 a.btn{
     line-height: .9rem;
     font-size: .9rem;
