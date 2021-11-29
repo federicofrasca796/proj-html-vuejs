@@ -153,7 +153,7 @@ export default {
     url("../assets/img/home-movation-shape-face.png");
   background-repeat: no-repeat;
   background-position: 80% bottom, 90% 125%;
-  background-size: 38%, 40%;
+  background-size: 35%, 38%;
   .jumbo_cta {
     padding: 8rem 0;
   }

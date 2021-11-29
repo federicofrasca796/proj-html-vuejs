@@ -1,7 +1,7 @@
 <template>
   <section class="container" id="online_courses">
     <!-- Section title -->
-    <div class="text-center">
+    <div class="text-center my-5">
       <h4 class="section_title">begin your journey at MaxCoach</h4>
       <h2>Latest <span class="primary_color">Online Courses</span></h2>
     </div>

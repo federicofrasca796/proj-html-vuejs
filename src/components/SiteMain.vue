@@ -197,8 +197,8 @@ export default {
 
 #site_main {
   section {
-    margin-top: 5rem;
-    margin-bottom: 5rem;
+    margin-top: 8rem;
+    margin-bottom: 8rem;
   }
 }
 </style>

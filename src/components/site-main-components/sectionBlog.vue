@@ -1,7 +1,7 @@
 <template>
   <section class="container" id="blog_articles">
     <!-- Section header  -->
-    <div class="row">
+    <div class="my-5">
       <h4 class="section_title">Blog Updated</h4>
       <h2>
         Interesting <span class="primary_color">articles updated</span> daily
