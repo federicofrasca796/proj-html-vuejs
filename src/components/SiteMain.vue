@@ -1,7 +1,7 @@
 <template>
   <main id="site_main">
     <!-- SECTION 1 "Accomplishments" -->
-
+    <sectionAccomplish />
     <!-- SECTION 2 "About Me" -->
     <sectionAboutMe />
 
@@ -29,9 +29,11 @@ import sectionBooks from "@/components/site-main-components/sectionBooks.vue";
 import sectionClients from "@/components/site-main-components/sectionClients.vue";
 import sectionStories from "@/components/site-main-components/sectionStories.vue";
 import sectionBlog from "@/components/site-main-components/sectionBlog.vue";
+import sectionAccomplish from "@/components/site-main-components/sectionAccomplish.vue";
 
 export default {
   components: {
+    sectionAccomplish,
     sectionAboutMe,
     sectionCourses,
     sectionBooks,

@@ -1,5 +1,5 @@
 <template>
-  <div id="site_header">
+  <header id="site_header">
     <div class="container">
       <!-- NAVBAR -->
       <nav class="navbar" id="navbar">
@@ -34,7 +34,7 @@
         </div>
       </section>
     </div>
-  </div>
+  </header>
 </template>
 
 <script>

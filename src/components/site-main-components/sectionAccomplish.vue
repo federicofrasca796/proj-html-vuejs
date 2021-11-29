@@ -33,12 +33,12 @@ export default {};
     position: relative;
   }
   .accomplishment::before {
-    content: url("../assets/img/background-pattern-grid-line-06.png");
+    content: url("../../assets/img/background-pattern-grid-line-06.png");
     position: absolute;
     top: 0;
   }
   .accomplishment:last-child::after {
-    content: url("../assets/img/background-pattern-grid-line-06.png");
+    content: url("../../assets/img/background-pattern-grid-line-06.png");
     position: absolute;
     top: 0;
     right: 0;
@@ -49,7 +49,7 @@ export default {};
     text-align: center;
   }
   .numbers {
-    font-weight: 700;
+    font-weight: 600;
     font-size: 1.8rem;
     margin-bottom: 0.5rem;
     color: $brand_primary;
