@@ -4,17 +4,30 @@
       <div class="row">
         <!-- Address and socials -->
         <div class="col-6">
+          <!-- Address  -->
           <div class="address">
             <h3 class="white-txt">Address</h3>
-            <div>382 NE 191st St # 87394 Miami, FL 33179-3899</div>
-            <div>+1 (305) 547-9909 (9am - 5pm EST, Monday - Friday)</div>
-            <a href="#">support@maxcoach.com</a>
+            <ul>
+              <li>382 NE 191st St # 87394 Miami, FL 33179-3899</li>
+              <li>+1 (305) 547-9909 (9am - 5pm EST, Monday - Friday)</li>
+              <li><a href="#">support@maxcoach.com</a></li>
+            </ul>
           </div>
+
+          <!-- Socials -->
           <div class="socials">
-            <i class="fab fa-facebook-square"></i>
-            <i class="fab fa-twitter"></i>
-            <i class="fab fa-instagram"></i>
-            <i class="fab fa-linkedin"></i>
+            <a href="">
+              <i class="fab fa-facebook-square me-4"></i>
+            </a>
+            <a href="">
+              <i class="fab fa-twitter me-4"></i>
+            </a>
+            <a href="">
+              <i class="fab fa-instagram me-4"></i>
+            </a>
+            <a href="">
+              <i class="fab fa-linkedin me-4"></i>
+            </a>
           </div>
         </div>
 
@@ -33,6 +46,11 @@
             </ul>
           </div>
         </div>
+      </div>
+
+      <!-- Copyright -->
+      <div class="row justify-content-center mt-5">
+        © 2020 Maxcoach. All Rights Reserved
       </div>
     </div>
   </footer>
@@ -107,10 +125,31 @@ export default {
 @import "../assets/scss/variables.scss";
 
 #site_footer {
+  font-size: 14px;
   background: $bg_dark;
   color: $lighter_grey;
-  padding: 3rem 0;
+  margin-top: 10rem;
+  padding: 4rem 0;
+  h1,
+  h2,
+  h3 {
+    color: #fff;
+  }
+  li {
+    margin-bottom: 1rem;
+  }
+  .socials {
+    font-size: 1.6rem;
+    margin: 2.5rem 0;
+    a:hover {
+      color: #fff;
+    }
+  }
+
   #footer_links {
+    .col-6 {
+      margin-right: 1rem;
+    }
     .col-6:first-child {
       ul {
         display: flex;
