@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <!-- Side fixed nav  -->
     <nav id="side_nav">
       <ul>
         <li>
@@ -27,9 +28,15 @@
         </li>
       </ul>
     </nav>
-    <SiteHeader />
+
+    <SiteHeader id="start" />
     <SiteMain />
     <SiteFooter />
+
+    <!-- Return top button  -->
+    <a href="#start" id="to_top">
+      <i class="fas fa-arrow-up"></i>
+    </a>
   </div>
 </template>
 
@@ -72,6 +79,22 @@ export default {
     filter: invert(21%) sepia(4%) saturate(46%) hue-rotate(314deg)
       brightness(90%) contrast(96%);
   }
+}
+#to_top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  border-radius: 50%;
+  font-size: 1.8rem;
+  color: #fff;
+  background: $brand_primary;
+  box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 1px 5px 0 rgb(0 0 0 / 12%),
+    0 3px 1px -2px rgb(0 0 0 / 20%);
 }
 
 #online_courses,
