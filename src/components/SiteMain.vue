@@ -124,6 +124,44 @@ export default {
         "client-logo-02-primary.png",
         // "client-logo-01-primary.png",
       ],
+      realStories: [
+        {
+          review_text:
+            "I am free to learn at my own pace, follow my own schedule and choose the subject I want to learn from the syllabus. Great study portal for people like me.",
+          review_author: {
+            name: "Mina Hollace",
+            avatar: "testimonial-avata-02.jpg",
+            job: "Freelancer",
+          },
+        },
+        {
+          review_text:
+            "I need to get a certification for English proficiency and MaxCoach is my best choice. Their tutors are smart and professional when dealing with students.",
+          review_author: {
+            name: "Madley Pondor",
+            avatar: "testimonial-avata-04.jpg",
+            job: "IT Specialist",
+          },
+        },
+        {
+          review_text:
+            "I am happy with their arrangement of lessons and subjects. They reflect a scientific investigation into effective methods to adopt for learners.",
+          review_author: {
+            name: "Luvic Dubble",
+            avatar: "testimonial-avata-01.jpg",
+            job: "Private Tutor",
+          },
+        },
+        {
+          review_text:
+            "I'm a very strict person so I require everything to be organized and neat. Then, I'll be able to make things right and shine. MaxCoach guys just got me.",
+          review_author: {
+            name: "Florence Themes",
+            avatar: "testimonial-avata-03.jpg",
+            job: "Multimedia Admin",
+          },
+        },
+      ],
     };
   },
 
