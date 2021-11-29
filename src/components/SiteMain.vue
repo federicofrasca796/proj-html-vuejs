@@ -38,7 +38,8 @@
     <sectionStories :storiesArr="realStories" />
 
     <!-- SECTION 7 "Blog Articles" -->
-    <section class="container">
+    <section class="container" id="blog_articles">
+      <!-- Section header  -->
       <div class="row">
         <h4 class="section_title">Blog Updated</h4>
         <h2>
@@ -46,13 +47,14 @@
         </h2>
       </div>
 
+      <!-- Articles cards -->
       <div class="row">
         <div class="col-3" v-for="article in articles" :key="article.key">
           <div class="card">
             <img
               :src="require(`@/assets/img/${article.thumb}`)"
               alt="article thumbnail"
-              class="card-img-top"
+              class="card-img-top rounded-3"
             />
             <div class="card-title">
               <div class="publish_date">
@@ -67,6 +69,11 @@
             </div>
           </div>
         </div>
+      </div>
+
+      <!-- View all CTA  -->
+      <div class="text-center my-5">
+        <a class="btn_underline_primary">View All Posts</a>
       </div>
     </section>
   </main>
@@ -274,6 +281,20 @@ export default {
   }
   .txt {
     color: $light_grey;
+  }
+
+  //Section 7
+  #blog_articles {
+    .publish_date {
+      margin-top: 2rem;
+      color: $light_grey;
+      i {
+        margin-right: 0.5rem;
+      }
+    }
+    .card-title > h3 {
+      color: $darkest_grey;
+    }
   }
 }
 </style>

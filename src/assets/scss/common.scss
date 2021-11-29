@@ -100,11 +100,26 @@ a.btn{
 .btn_primary{
     background-color: $brand_primary;
     color: #ffffff;
+    
     &:hover{
         background-color: $brand_purple;
         color: #ffffff;
     }
 }
+.btn_underline_primary{
+    text-transform: uppercase;
+    color: $brand_primary;
+    border-bottom: 1.5px solid $brand_primary;
+    padding: 0 0 .2rem;
+    border-radius: 0;
+    font-size: 1.1rem;
+    font-weight: 500;
+    &:hover{
+        color: $brand_purple;
+    border-bottom: 1.5px solid $brand_purple;
+    }
+}
+
 
 .card {
   border: none;

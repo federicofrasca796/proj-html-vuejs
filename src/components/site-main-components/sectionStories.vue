@@ -1,5 +1,5 @@
 <template>
-  <section class="container-fluid bg_waves position-relative">
+  <section class="container-fluid bg_waves position-relative" id="real_stories">
     <div class="row">
       <!-- Stories column -->
       <div class="col-6 text-center">
@@ -54,4 +54,48 @@ export default {
 </script>
 
 <style lang="scss">
+@import "@/assets/scss/variables.scss";
+
+#real_stories {
+  & .row {
+    align-items: center;
+  }
+  .real_story {
+    width: 60%;
+    margin: auto;
+    .story_quote {
+      color: $darkest_grey;
+      font-size: 1.5rem;
+      margin-top: 3rem;
+      margin-bottom: 3rem;
+    }
+    .story_avatar {
+      width: 80px;
+      height: 80px;
+      margin-bottom: 1.5rem;
+    }
+    .story_author {
+      font-size: 1.3rem;
+      margin-bottom: 0.5rem;
+    }
+    .story_job {
+      //   font-size: 0.9rem;
+      color: $light_grey;
+    }
+  }
+  .carousel_scroll {
+    display: inline-block;
+    text-align: center;
+    width: 90px;
+    height: 90px;
+    padding: 0.5rem;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 20px 50px rgb(0 0 0 / 5%);
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+  }
+}
 </style>
